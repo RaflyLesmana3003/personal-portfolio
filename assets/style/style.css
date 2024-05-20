@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Plus%20Jakarta%20Sans:700|Noto%20Sans%20Symbols:400');
+@import url('https://cdn.lineicons.com/4.0/lineicons.css');
+:root{
+    --box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.11);
+    --border-radius: 8px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans Symbols';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+body{
+    padding: 10rem;
+}
+
+.container{
+    display: flex;
+    gap: 2rem;
+}
+
+.container>aside{
+    border-radius: var(--border-radius);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+}
+
+aside{
+    background: white;
+    padding: 0 1rem;
+
+    div{
+        position: relative;
+        top: -50px;
+        text-align: center;
+    }
+}
+
+.photo-profile{
+    border-radius: 8px;
+    position: relative;
+    top: -50px;
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+nav>*{
+    border-radius: var(--border-radius);
+    padding: 10px;
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+    width: 5rem;
+    height: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .lni{
+        font-size: 2em;
+    }
+}
+
+article{
+    border-radius: var(--border-radius);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+
+    width: 100%;
+    height: 10rem;
+}
